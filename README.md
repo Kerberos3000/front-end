@@ -23,7 +23,7 @@ Should show the newly created image `weaveworksdemos/front-end:MasterFachstudie`
 
 ## Start
 Change to demo application: 
-[Link to Repo](https://github.com/microservices-demo/microservices-demo)
+[Link to Repo](hhttps://github.com/Kerberos3000/microservices-demo)
 
 and start it.
 
