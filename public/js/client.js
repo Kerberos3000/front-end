@@ -92,7 +92,7 @@ function order() {
 
     var success = false;
     $.ajax({
-        url: "ordersprocess",
+        url: "orders",
         type: "POST",
         async: false,
         success: function (data, textStatus, jqXHR) {

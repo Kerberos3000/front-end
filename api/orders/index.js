@@ -45,7 +45,7 @@
     request.get(url).pipe(res);
   });
 
-  app.post("/ordersprocess", function(req, res, next) {
+  app.post("/orders", function(req, res, next) {
     console.log("Request received with body: " + JSON.stringify(req.body));
     var logged_in = req.cookies.logged_in;
     if (!logged_in) {
@@ -118,9 +118,8 @@
           });
         },
         function (order, callback) {
-            console.log("stinke pimmel");
           var options = {
-			  uri: 'http://192.168.80.11' + '/ordersprocess',
+            uri: endpoints.ordersUrl + '/orders',
             method: 'POST',
             json: true,
             body: order
