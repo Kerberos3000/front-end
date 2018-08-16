@@ -119,7 +119,7 @@
         },
         function (order, callback) {
           var options = {
-            uri: endpoints.ordersUrl + '/orders',
+            uri: endpoints.ordersProcessUrl + '/ordersprocess',
             method: 'POST',
             json: true,
             body: order
