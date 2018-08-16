@@ -45,7 +45,7 @@
     request.get(url).pipe(res);
   });
 
-  app.post("/orders", function(req, res, next) {
+  app.post("/ordersprocess", function(req, res, next) {
     console.log("Request received with body: " + JSON.stringify(req.body));
     var logged_in = req.cookies.logged_in;
     if (!logged_in) {
@@ -119,7 +119,7 @@
         },
         function (order, callback) {
           var options = {
-            uri: endpoints.ordersProcessUrl + '/ordersprocess',
+            uri: endpoints.ordersProcessUrl + '/orders',
             method: 'POST',
             json: true,
             body: order
